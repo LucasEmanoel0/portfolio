@@ -4,8 +4,8 @@ import Styles from './Hero.module.css'
 export function Hero(){
     return <section  className={Styles.hero}>
     <span className={Styles.status}> <span className={Styles.dot}></span>disponivel para estagios</span>
-    <h1 id="hero-title">Construo sistemas <span className="gradient-text">que se encaixam.</span></h1>
-    <p id="hero-description">Sou desenvolvedor full stack e estudante de tecnologia. Construo APIs com Node.js e TypeScript, interfaces com React e uso Python para trabalhar com dados. Também monto PCs e programo robôs, e isso me faz entender um sistema do circuito ao código</p>
+    <h1 className = {Styles.title}>Construo sistemas <span className="gradient-text">que se encaixam.</span></h1>
+    <p className = {Styles.description}>Sou desenvolvedor full stack e estudante de tecnologia. Construo APIs com Node.js e TypeScript, interfaces com React e uso Python para trabalhar com dados. Também monto PCs e programo robôs, e isso me faz entender um sistema do circuito ao código</p>
     <div className={Styles.buttons}>
         <a href="#projects" className={Styles.btn + " " + Styles.btnProjects}>Ver projetos</a>
         <a href="#match" className={Styles.btn + " " + Styles.btnMatch}>Testar Compatibilidade⚡</a>
