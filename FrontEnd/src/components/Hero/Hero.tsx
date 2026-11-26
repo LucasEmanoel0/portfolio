@@ -54,6 +54,19 @@ export function Hero({ language }: HeroProps) {
       </div>
 
       <div className={Styles.visual}>
+        <svg className={Styles.traces} viewBox="0 0 100 100" preserveAspectRatio="none">
+  {techs.map((tech) => {
+  const x = parseFloat(tech.left)
+  const y = parseFloat(tech.top) + 3
+  const d = `M 50 50 H ${x} V ${y}`
+  return (
+    <g key={tech.name}>
+      <path d={d} />
+      <path d={d} className={Styles.pulse} style={{ animationDelay: tech.delay }} />
+    </g>
+  )
+})}
+</svg>
         <div className={Styles.chip}>
           <div className={Styles.core}>
             <b className={Styles.initials + ' gradient-text'}>LE</b>

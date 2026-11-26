@@ -23,6 +23,26 @@ export const translations = {
       statsTechnologies: 'tecnologias',
       statsCommits: 'commits',
     },
+    about: {
+  eyebrow: '01 · SOBRE',
+  title: 'Um pouco',
+  titleHighlight: 'sobre mim',
+  storyLabel: 'QUEM SOU',
+  story1:
+    'Comecei montando PCs e construindo robôs, querendo entender como tudo se conecta, do circuito ao código. Hoje construo sistemas completos: APIs em Node.js, interfaces em React e análises de dados em Python.',
+  story2:
+    'Meu projeto principal, o ShopMind AI, junta as duas paixões: um e-commerce de hardware que verifica se as peças são compatíveis.',
+  locationLabel: 'LOCAL',
+  location: 'Brasil',
+  locationDetail: 'Remoto ou híbrido',
+  quote: '“Passos pequenos, sistemas grandes.”',
+  hobbiesLabel: 'FORA DO CÓDIGO',
+  hobbies: ['🔧 Montar PCs', '🤖 Robótica', '🎮 Games', '☕ Café', '📚 Aprender coisas novas'],
+  learningLabel: 'APRENDENDO AGORA',
+  educationLabel: 'FORMAÇÃO',
+  education: 'Engenharia da Computação',
+  educationDetail: 'Previsão: 2028',
+},
   },
   en: {
     header: {
@@ -46,5 +66,25 @@ export const translations = {
       statsTechnologies: 'technologies',
       statsCommits: 'commits',
     },
+    about: {
+  eyebrow: '01 · ABOUT',
+  title: 'A little',
+  titleHighlight: 'about me',
+  storyLabel: 'WHO I AM',
+  story1:
+    'I started by building PCs and robots, wanting to understand how everything connects, from circuit to code. Today I build complete systems: APIs in Node.js, interfaces in React and data analysis in Python.',
+  story2:
+    'My main project, ShopMind AI, combines both passions: a hardware e-commerce that checks whether parts are compatible.',
+  locationLabel: 'LOCATION',
+  location: 'Brazil',
+  locationDetail: 'Remote or hybrid',
+  quote: '“Small steps, big systems.”',
+  hobbiesLabel: 'BEYOND CODE',
+  hobbies: ['🔧 Building PCs', '🤖 Robotics', '🎮 Games', '☕ Coffee', '📚 Learning new things'],
+  learningLabel: 'LEARNING NOW',
+  educationLabel: 'EDUCATION',
+  education: 'Computer Engineer',
+  educationDetail: 'Expected: 2029',
+},
   },
 }
