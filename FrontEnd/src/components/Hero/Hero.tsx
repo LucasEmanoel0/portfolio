@@ -1,3 +1,18 @@
+const techs = [
+  { name: 'TypeScript', color: '#3178c6', top: '12%', left: '18%',delay: '0s' },
+  { name: 'Node.js',    color: '#68a063', top: '25%', left: '78%',delay: '-2s' },
+  { name: 'PostgreSQL', color: '#4f7cff', top: '45%', left: '8%' ,delay: '-4s' },
+  { name: 'React',      color: '#61dafb', top: '78%', left: '75%' , delay: '1s'},
+  { name: 'Python',     color: '#ffd43b', top: '72%', left: '15%' , delay: '2s'},
+  { name: 'Arduino',    color: '#00979d', top: '88%', left: '42%' ,delay: '3s'},
+]
+
+
+
+
+
+
+
 import Styles from './Hero.module.css'
 import { translations, type Language } from '../../i18n/translations'
 
@@ -48,6 +63,16 @@ export function Hero({ language }: HeroProps) {
             
             </div>
           </div>
+          {techs.map((tech)=>(
+            <span key={tech.name}
+            className={Styles.node}
+            style={{top:tech.top,left:tech.left,animationDelay: tech.delay}}>
+              <span className={Styles.nodeDot}
+              style = {{background:tech.color}}>
+              </span>
+              {tech.name}
+            </span>
+          ))}
         </div>
         
         

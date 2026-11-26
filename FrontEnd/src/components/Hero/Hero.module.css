@@ -99,6 +99,7 @@
     height: 30rem;
     display: grid;
     place-items: center;
+    position: relative;
 }
 
 .core{
@@ -144,5 +145,31 @@
 @keyframes spin {
   to {
     --angle: 360deg;
+  }
+}
+.node{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 0.9rem;
+    border-radius:0.75rem;
+    background-color: rgba(12, 14, 30, 0.85);
+    border: 1px solid var(--line-2);
+    font-size: 0.8rem;
+    font-weight: 600;
+    animation: float 6s ease-in-out infinite;
+
+}
+.nodeDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #3178c6;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-10px);
   }
 }
