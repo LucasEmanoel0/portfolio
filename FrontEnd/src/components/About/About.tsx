@@ -1,4 +1,4 @@
-import { translations, type Language } from '../i18n/translations'
+import { translations, type Language } from '../../i18n/translations'
 import Styles from './About.module.css'
 import { Card } from './Card'
 

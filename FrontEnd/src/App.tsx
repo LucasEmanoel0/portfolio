@@ -2,7 +2,7 @@ import {useState} from 'react'
 import type {Language} from './i18n/translations'
 import { Header } from './components/Header/Header'
 import { Hero } from './components/Hero/Hero'
-import { About } from './About/About'
+import { About } from './components/About/About'
 
 
 function App() {
