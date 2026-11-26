@@ -1,0 +1,83 @@
+.hero{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+    line-height: 1.2;
+}
+.status{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    background-color: rgba(52, 211, 153, 0.08);
+    border: 1px solid rgba(52, 211, 153, 0.25);
+    font-size: 0.875rem;
+}
+
+.dot{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 999px;
+    background-color: var(--green);
+}
+.description{
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: var(--muted);
+    max-width: 40rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+.btn{
+    padding: 0.9rem 1.6rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+.btnProjects{
+    background-color: #fff;
+    color: var(--bg);
+}
+.btnProjects:hover{
+    background-color: var(--green);
+
+}
+.btnMatch{
+    border: 1px solid var(--line-2);
+    background-color: rgba(255, 255, 255, 0.03);
+    color: var(--text);
+}
+.btnMatch:hover{
+    background-color: rgba(255, 255, 255, 0.08);
+
+}
+
+.stats{
+    display: flex;
+    gap: 1.75rem;
+    margin-top: 1.5rem;
+    color: var(--muted);
+    font-size: 0.875rem;
+
+    b{
+        display: block;
+        font-size: 1.4rem;
+        color: var(--text);
+    }
+}
