@@ -54,3 +54,25 @@
     font-weight: 700;
     margin-left: 1rem;
 }
+.langButton {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: 1px solid var(--line-2);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.langButton:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.flag {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
