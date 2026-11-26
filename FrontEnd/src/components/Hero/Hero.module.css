@@ -1,3 +1,11 @@
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+
 .hero{
     min-height: 100vh;
     display: grid;
@@ -92,16 +100,7 @@
     display: grid;
     place-items: center;
 }
-.chip{
-    width: 15rem;
-    height: 15rem;
-    border-radius: 2rem;
-    background: linear-gradient(145deg, #1a1d3a, #0b0d1f);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 0 40px 120px rgba(124, 92, 255, 0.35);
-  display: grid;
-  place-items: center;
-}
+
 .core{
     width: 70%;
     height: 70%;
@@ -127,4 +126,23 @@
     text-transform: uppercase;
     color: var(--muted);
     margin-top: 0.5rem;
+}
+.chip {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 2rem;
+  background:
+    linear-gradient(145deg, #1a1d3a, #0b0d1f) padding-box,
+    conic-gradient(from var(--angle), #7c5cff, #22d3ee, #f472b6, #7c5cff) border-box;
+  border: 5px solid transparent;
+  box-shadow: 0 40px 120px rgba(124, 92, 255, 0.35);
+  display: grid;
+  place-items: center;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    --angle: 360deg;
+  }
 }
