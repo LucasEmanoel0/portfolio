@@ -10,7 +10,8 @@ export function Hero({ language }: HeroProps) {
 
   return (
     <section id="hero" className={Styles.hero}>
-      <span className={Styles.status}>
+      <div className={Styles.content}>
+        <span className={Styles.status}>
         <span className={Styles.dot}></span>
         {t.status}
       </span>
@@ -35,6 +36,23 @@ export function Hero({ language }: HeroProps) {
         <div><p><b>11</b> {t.statsTechnologies}</p></div>
         <div><p><b>1.200+</b> {t.statsCommits}</p></div>
       </div>
+      </div>
+
+      <div className={Styles.visual}>
+        <div className={Styles.chip}>
+          <div className={Styles.core}>
+            <b className={Styles.initials + ' gradient-text'}>LE</b>
+            <small className={Styles.label}>
+              FullStack
+            </small>
+            
+            </div>
+          </div>
+        </div>
+        
+        
+
+      
     </section>
   )
 }
