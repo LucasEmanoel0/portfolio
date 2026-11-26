@@ -2,7 +2,7 @@ import Styles from './Hero.module.css'
 
 
 export function Hero(){
-    return <section  className={Styles.hero}>
+    return <section id="hero" className={Styles.hero}>
     <span className={Styles.status}> <span className={Styles.dot}></span>disponivel para estagios</span>
     <h1 className = {Styles.title}>Construo sistemas <span className="gradient-text">que se encaixam.</span></h1>
     <p className = {Styles.description}>Sou desenvolvedor full stack e estudante de tecnologia. Construo APIs com Node.js e TypeScript, interfaces com React e uso Python para trabalhar com dados. Também monto PCs e programo robôs, e isso me faz entender um sistema do circuito ao código</p>
