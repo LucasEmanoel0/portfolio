@@ -1,0 +1,173 @@
+/* ===== A seção ===== */
+.about {
+  padding: 6rem 2rem;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--cyan);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  margin-top: 0.5rem;
+}
+
+/* ===== O mosaico ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 12rem;
+  gap: 1.1rem;
+  margin-top: 3rem;
+}
+
+/* ===== A moldura de todos os cards ===== */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  /* borda em duas camadas (igual à do chip) */
+  border: 1px solid transparent;
+  background:
+    linear-gradient(#0d0f20, #0d0f20) padding-box,
+    linear-gradient(135deg, var(--line-2), var(--line)) border-box;
+
+  /* brilho com a cor de cada card */
+  box-shadow: 0 10px 40px color-mix(in srgb, var(--accent, #7c5cff) 15%, transparent);
+
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background:
+    linear-gradient(#0d0f20, #0d0f20) padding-box,
+    linear-gradient(135deg, var(--accent, #7c5cff), #22d3ee) border-box;
+  box-shadow: 0 20px 60px color-mix(in srgb, var(--accent, #7c5cff) 30%, transparent);
+}
+
+/* o reflexo de luz que atravessa o card no hover */
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 40%, rgba(255, 255, 255, 0.08) 50%, transparent 60%);
+  transform: translateX(-100%);
+  transition: transform 0.8s;
+  pointer-events: none;
+}
+
+.card:hover::after {
+  transform: translateX(100%);
+}
+
+/* ===== O conteúdo de dentro dos cards ===== */
+.label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  color: var(--accent, var(--muted));
+  margin-bottom: 0.25rem;
+}
+
+.card b {
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+}
+
+.card small {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line);
+  font-size: 0.85rem;
+}
+
+/* ===== Cada card ===== */
+.photo {
+  grid-row: span 2;
+  padding: 0;
+}
+
+.photoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story {
+  --accent: #7c5cff;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.story p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #c9cdf0;
+}
+
+.location {
+  --accent: #22d3ee;
+}
+
+.quote {
+  --accent: #a78bfa;
+  justify-content: flex-end;
+  background:
+    linear-gradient(135deg, #261f5c, #0f2a3a) padding-box,
+    linear-gradient(135deg, var(--line-2), var(--line)) border-box;
+}
+
+.quote:hover {
+  background:
+    linear-gradient(135deg, #261f5c, #0f2a3a) padding-box,
+    linear-gradient(135deg, var(--accent), #22d3ee) border-box;
+}
+
+.quote p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.hobbies {
+  --accent: #34d399;
+  grid-column: span 2;
+}
+
+.learning {
+  --accent: #f472b6;
+}
+
+.learning .chip {
+  border-color: rgba(244, 114, 182, 0.4);
+  color: #f9a8d4;
+  background: transparent;
+}
+
+.education {
+  --accent: #fbbf24;
+}
