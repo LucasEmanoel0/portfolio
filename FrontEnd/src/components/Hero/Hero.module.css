@@ -7,10 +7,11 @@
     padding: 0 2rem;
 }
 .title{
-    font-size: 3rem;
+  max-width: 10ch;
+    font-size: 5rem;
     font-weight: 700;
-    letter-spacing: -0.05rem;
-    line-height: 1.2;
+    letter-spacing: -0.04rem;
+    line-height: 1;
 }
 .status{
     width: fit-content;
