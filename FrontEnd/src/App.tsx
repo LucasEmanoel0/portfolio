@@ -10,6 +10,12 @@ function App() {
   const [language, setLanguage] = useState<Language>('en')
   return (
     <>
+    <div className="space">
+  <div className="galaxy"></div>
+  <div className="planet"></div>
+  <div className="ringed"></div>
+  <div className="moon"></div>
+</div>
     <Header language={language} onLanguageChange={setLanguage}></Header>
    <Hero language={language}></Hero>
    <About language={language} />
