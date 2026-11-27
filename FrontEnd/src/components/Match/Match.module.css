@@ -1,0 +1,153 @@
+.container {
+  padding: 6rem 2rem;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--cyan);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  margin-top: 0.5rem;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 36rem;
+  margin-top: 1rem;
+}
+/* as duas colunas */
+.match {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.75rem;
+  margin-top: 3rem;
+}
+
+/* a caixa dos requisitos */
+.reqs {
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--line);
+  padding: 1.75rem;
+}
+
+.reqs h3 {
+  font-size: 1rem;
+}
+
+.sub {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0.25rem 0 1.2rem;
+}
+
+/* os botões lado a lado */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* cada botão */
+.option {
+  padding: 0.6rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--line-2);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.option:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.on {
+  background: rgba(124, 92, 255, 0.18);
+  border-color: var(--violet);
+  box-shadow: 0 0 24px rgba(124, 92, 255, 0.25);
+}
+.result {
+  border-radius: 1.5rem;
+  border: 1px solid var(--line);
+  background: linear-gradient(160deg, rgba(124, 92, 255, 0.12), rgba(5, 6, 15, 0.4));
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.percent {
+  font-size: 4rem;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.verdict {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.list {
+  list-style: none;
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.45rem 0;
+  border-bottom: 1px dashed var(--line);
+}
+
+.ok       { color: var(--green); }
+.learning { color: #fbbf24; }
+.no       { color: #f87171; }
+
+.gauge {
+  position: relative;
+  width: 210px;
+  height: 210px;
+}
+
+.gauge svg {
+  transform: rotate(-90deg);
+}
+
+.gauge circle {
+  fill: none;
+  stroke-width: 14;
+}
+
+.track {
+  stroke: rgba(255, 255, 255, 0.07);
+}
+
+.fill {
+  stroke: var(--violet);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.8s ease;
+}
+
+.value {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
